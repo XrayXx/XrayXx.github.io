@@ -1,3 +1,26 @@
+(function(){
+    var soin = document;
+    var elem = soin.createElement("div"),
+    wrappedP = soin.getElementById("soin"); 
+    elem.innerHTML = [ 
+    `
+    <div id="result"></div>
+    <br>
+    <button class="btn btn-primary shadow-primary" onclick="getSoin()">Сгенерировать</button>
+
+    `
+    ];
+    elem.id = 'mrDynamic';
+    wrappedP.parentNode.replaceChild(elem, wrappedP);
+    console.log(elem);
+
+})();
+
+
+
+
+
+
 var soinMax;
   var soinrand;
     soin_array = [
